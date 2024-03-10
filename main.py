@@ -1,6 +1,8 @@
+import os
+from os import environ
+environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 import pygame
 import Levels
-import os
 import sys
 
 HEROPATH = os.path.join(os.getcwd(), 'resources/images/pacman.png')
