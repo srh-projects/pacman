@@ -22,6 +22,9 @@ This will launch the game in the console. Follow the on-screen instructions to p
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Build
+[![Python application](https://github.com/srh-projects/pacman/actions/workflows/python-app.yml/badge.svg)](https://github.com/srh-projects/pacman/actions/workflows/python-app.yml)
+
 ## Authors
 
 - [@pradyumna](https://github.com/Pradyumna2098)
