@@ -25,6 +25,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Build
 [![Python application](https://github.com/srh-projects/pacman/actions/workflows/python-app.yml/badge.svg)](https://github.com/srh-projects/pacman/actions/workflows/python-app.yml)
 
+## Class diagram
+
+![ClassDiagram](https://github.com/srh-projects/pacman/blob/main/classDiag.png)
+
 ## Authors
 
 - [@pradyumna](https://github.com/Pradyumna2098)
