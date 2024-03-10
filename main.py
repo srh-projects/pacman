@@ -63,8 +63,6 @@ def startGame(level, screen, font):
 
         hero_sprites.draw(screen)
 
-        #lets see if we habve collision between our pacman and food
-
         for hero in hero_sprites:
             food_eaten = pygame.sprite.spritecollide(hero, food_sprites, True)
 
@@ -76,7 +74,7 @@ def startGame(level, screen, font):
 
         for ghost in ghost_sprites:
             if ghost.tracks_loc[1] < ghost.tracks[ghost.tracks_loc[0]][2]:
-                ghost.changeSpeed(ghost.tracks[ghost.tracks_loc[0]][0:2]) #(0, 1)
+                ghost.changeSpeed(ghost.tracks[ghost.tracks_loc[0]][0:2])
                 ghost.tracks_loc[1] += 1
             else:
                 if ghost.tracks_loc[0] < len(ghost.tracks) - 1:
@@ -138,4 +136,5 @@ def main(screen):
 
 
 if __name__ == "__main__":
+    
     main(initialize())

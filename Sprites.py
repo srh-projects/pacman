@@ -1,9 +1,6 @@
 import pygame
 import random
 
-#main characters : Wall, Food, Player
-
-
 class Wall(pygame.sprite.Sprite):
 
     def __init__(self, x, y, width, height, color):
@@ -28,7 +25,6 @@ class Food(pygame.sprite.Sprite):
 
 class Player(pygame.sprite.Sprite):
 
-    #object of PLayer : (blinky.png)
     def __init__(self, x, y, role_image_path):
         pygame.sprite.Sprite.__init__(self)
         self.role_name = role_image_path.split('/')[-1].split('.')[0]
@@ -48,8 +44,6 @@ class Player(pygame.sprite.Sprite):
         self.tracks = []
         self.tracks_loc = [0, 0]
 
-        #[[2, 3], [], []]
-        #direction = [2,3]
 
     def changeSpeed(self, direction ):
         if direction[0] < 0:
@@ -70,7 +64,7 @@ class Player(pygame.sprite.Sprite):
         return self.speed
 
     def update(self, wall_sprites, gate_sprites):
-        """move your character"""
+        """move character"""
         if not self.is_move:
             return False
         x_prev = self.rect.left
@@ -79,8 +73,6 @@ class Player(pygame.sprite.Sprite):
         self.rect.left += self.speed[0]
         self.rect.top += self.speed[1]
 
-
-        #collision code
         is_collide = pygame.sprite.spritecollide(self, wall_sprites, False)
         if gate_sprites is not None:
             if not is_collide:
