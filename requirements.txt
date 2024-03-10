@@ -1,3 +1,0 @@
-pytest
-pygame
-random
