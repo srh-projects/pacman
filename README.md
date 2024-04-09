@@ -16,7 +16,7 @@ To start the game, run the `main.py` script:
 python game.py
 ```
 
-This will launch the game in the console. Follow the on-screen instructions to play the game.
+This will launch the game on the console. Follow the on-screen instructions to play the game.
 
 ## License
 
@@ -34,3 +34,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [@pradyumna](https://github.com/Pradyumna2098)
 - [@venkat](https://github.com/Venkatchavan)
 - [@chethan](https://github.com/chethandvg)
+
+## References
+ - The tile graphics were used from https://github.com/nishittated/Pacman-Game/tree/master/images
+ - Some parts of game logic are inspired by https://github.com/nishittated/Pacman-Game and https://github.com/denizbilgin/PacMan-Game
